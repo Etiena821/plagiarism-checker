@@ -32,7 +32,7 @@ public class CompareFileServiceImpl implements CompareFilesService {
 
       Damerau damerau = new Damerau();
 
-      var value = damerau.distance(one, two);
+      double value = damerau.distance(one, two);
 
       String result = ((value / one.length()) * 100) + "%";
 
